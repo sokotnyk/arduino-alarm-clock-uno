@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⏰ Arduino Alarm Clock
+# Arduino Alarm Clock
 
 **Multifunctional alarm clock built on Arduino Uno Kit 3.0**
 
@@ -14,22 +14,22 @@
 
 ---
 
-## 📖 About
+## About
 
 A full-featured digital alarm clock built on the **Arduino Uno Kit 3.0**. Displays live time and date on an I2C LCD, tracks room temperature and humidity, and lets you set the time, date, and alarm using physical buttons and a joystick. Alarm settings are saved to EEPROM, so they survive a power loss. Built as a coursework project — **scored 100/100**.
 
-## ✨ Features
+##  Features
 
-- 🕒 **Live clock screen** — hours, minutes, seconds, and full date, powered by a DS1302 RTC module
-- 🌡️ **Environment monitoring** — temperature and humidity readings from a DHT11 sensor, refreshed every 2 seconds
-- ⏰ **Configurable alarm** — set the alarm time, toggle it on/off, and it persists across reboots via EEPROM
-- 🔔 **Alarm trigger screen** — buzzer beeps in on/off pulses and RGB + status LEDs flash until any button is pressed
-- 🎮 **Dual input control** — 4 push buttons *and* a joystick, both usable to navigate menus and adjust values
-- 💡 **Status indication via RGB + LEDs** — color coding shows the current mode at a glance (clock, sensors, editing time, editing date, editing alarm, alarming)
-- 🧠 **Debounced button handling** — custom debounce logic prevents false triggers on all 4 buttons
-- 💾 **EEPROM persistence** — alarm hour, minute, and enabled state are stored with a magic-byte check to detect first boot
+-  **Live clock screen** — hours, minutes, seconds, and full date, powered by a DS1302 RTC module
+-  **Environment monitoring** — temperature and humidity readings from a DHT11 sensor, refreshed every 2 seconds
+-  **Configurable alarm** — set the alarm time, toggle it on/off, and it persists across reboots via EEPROM
+-  **Alarm trigger screen** — buzzer beeps in on/off pulses and RGB + status LEDs flash until any button is pressed
+-  **Dual input control** — 4 push buttons *and* a joystick, both usable to navigate menus and adjust values
+-  **Status indication via RGB + LEDs** — color coding shows the current mode at a glance (clock, sensors, editing time, editing date, editing alarm, alarming)
+-  **Debounced button handling** — custom debounce logic prevents false triggers on all 4 buttons
+-  **EEPROM persistence** — alarm hour, minute, and enabled state are stored with a magic-byte check to detect first boot
 
-## 🖥️ Screens & Navigation
+##  Screens & Navigation
 
 The clock is built as a state machine with 6 screens:
 
@@ -48,7 +48,7 @@ The clock is built as a state machine with 6 screens:
 - `BTN_MODE` — switch screens / go back / toggle alarm on-off from the clock screen
 - Any button press silences an active alarm
 
-## 🔌 Hardware & Pinout
+##  Hardware & Pinout
 
 | Component | Pin(s) |
 |---|---|
@@ -66,7 +66,7 @@ The clock is built as a state machine with 6 screens:
 | Joystick (Y-axis) | A0 |
 | LCD (I2C, 16×2) | I2C (SDA/SCL) |
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language:** C++ (Arduino framework)
 - **Board:** Arduino Uno
@@ -99,7 +99,7 @@ alarm/
 └── platformio.ini        # Board & library configuration
 ```
 
-## 🚀 Building & Uploading
+## Building & Uploading
 
 This project uses [PlatformIO](https://platformio.org/).
 

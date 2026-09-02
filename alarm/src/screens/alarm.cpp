@@ -1,1 +1,0 @@
-// Alarm screen logic is implemented in clock.cpp
